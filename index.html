@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Addition Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="splash-screen">
+        <img src="loading-icon-logo-design-template-illustration-free-vector.jpg" alt="Math Logo" class="logo spin">
+        <p>Loading...</p>
+    </div>
+    <header style="display: none;">
+        <img src="math-logo.png" alt="Math Logo" class="logo">
+        <h1>Math Addition Game</h1>
+    </header>
+    <div id="level-container" style="display: none;">
+        <button id="easy">Easy</button>
+        <button id="medium">Medium</button>
+        <button id="hard">Hard</button>
+    </div>
+    <div id="game-container" style="display: none;">
+        <p id="question"></p>
+        <div id="options">
+            <button class="option"></button>
+            <button class="option"></button>
+            <button class="option"></button>
+            <button class="option"></button>
+        </div>
+        <div id="controls">
+            <button id="home"><i class="fas fa-home"></i></button>
+            <button id="toggle"><i class="fas fa-pause"></i></button>
+        </div>
+    </div>
+    <footer style="display: none;">
+        <p>Score: <span id="score">0</span></p>
+        <p>Time left: <span id="timer">15</span> seconds</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
